@@ -3,7 +3,7 @@ theme: gaia
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: url('./assets/hero-background.svg')
 marp: true
 ---
 
@@ -39,11 +39,11 @@ How can TLP help share _only_ the right amount of what keeps devs up at night?
 
 # But what about ...
 
-:x: Generative AI?
-:x: Secure multi-party computation?
-:x: Homomorphic encryption?
-:white_check_mark: TLP?
-:thinking: Circling back on GenAI, SMPC, and HME, with labelled TLP data?
+- Generative AI?
+- Secure multi-party computation?
+- Homomorphic encryption?
+- TLP?
+  - Circling back on GenAI, SMPC, and HME, with labelled TLP data?
 
 ---
 

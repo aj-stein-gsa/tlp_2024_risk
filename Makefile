@@ -16,6 +16,9 @@ help:
 init: ## Install and configure dependencies
 	$(MARP_CLI_INSTALL_CMD)
 
+pres.html: ## Publish PDF version of presentation
+	$(MARP_CLI_EXEC_CMD_FULL) pres.md --html
+
 pres.pdf: ## Publish PDF version of presentation
 	$(MARP_CLI_EXEC_CMD_FULL) pres.md --pdf
 
@@ -28,6 +31,7 @@ debug: ## Debug interactively running in container for install problems
 
 .PHONY: clean
 clean: ## Clean only artifacts, not software or container images
+	rm -f pres.html	
 	rm -f pres.pdf
 	rm -f pres.pptx
 
@@ -45,4 +49,4 @@ watch: ## Run presentation in watch mode
 serve: ## Serve the presentation with a local web server
 	$(MARP_CLI_EXEC_CMD_FULL) -s .
 
-all: init pres.pdf pres.pptx ## Install dependencies and published exported formats
+all: init pres.html pres.pdf pres.pptx ## Install dependencies and published exported formats
