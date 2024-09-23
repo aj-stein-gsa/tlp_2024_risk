@@ -9,7 +9,7 @@ marp: true
 
 # **Threat modeling & TLP**
 
-How can TLP help share _only_ the right amout of what keeps devs up at night?
+How can TLP help share _only_ the right amount of what keeps devs up at night?
 
 ---
 
